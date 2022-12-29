@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+          background-image: url('back.jfif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+        <script type = "text/javascript">  
+            function fun() {  
+  
+  
+               alert ("Your Response saved successfully...!!");  
+            }  
+      </script>       
+</head>
+
+<body>
+    <h1>Register YourSelf</h1>
+
+<form action="#">
+ <fieldset>
+  <legend><h2>Personal Information</h2></legend>
+  <br>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday"> Date Of Birth:</label>
+  
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+  <label>Password:</label>
+  <input type="password" id ="password" name="password"><br><br>
+ </fieldset>
+ <fieldset>
+    <legend><h2>Techinal skills</h2></legend>
+    <br>
+    <label>Department:</label>
+    <select>
+        <option>CSE </option>
+        <option>AI </option>
+        <option>IT</option>
+        <option>ECE</option>
+        <option>EEE</option>
+    </select>
+    <br>
+    <br>
+    <label>Programming Languages: </label>
+    <br><br>
+    <input type="checkbox" >
+    <label > C Programming<label><br>
+   <input type="checkbox" >
+<label for="vehicle2"> C++ Programing</label><br>
+<input type="checkbox" >
+<label for="vehicle3"> Java Programming</label><br>
+<input type="checkbox" >
+<label for="vehicle3"> Python Programming</label><br>
+<input type="checkbox" >
+<label for="vehicle3"> Java Script Programming</label><br>
+    
+   </fieldset>
+   <fieldset>
+    <legend><h2>Placement</h2></legend>
+    <label>Company Placed in: </label>
+    <input type="text">
+    <br><br>
+    <label>Salary: </label>
+    <input type="number">
+    <br><br>
+    <label>Skills: </label>
+    <input type="text" minlength="10" maxlength="100" required>
+   </fieldset>
+   <br>
+   <input type = "button" value = "Submit" onclick = "fun();" />  
+</form>
+
+
+    
+</body>
+</html>
